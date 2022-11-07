@@ -17,7 +17,9 @@ def indexFunc(request):
     
     msg = "드장고 만세"
     context = {'msg':msg} # dict type 으로 작성해 html 문서에 기술한 장고 template 기호와 매핑
-    return render(request, 'main.html', context) # forward 방식 기본/ render -
+    return render(request, 'main.html', context) 
+    # forward 방식 기본/ redirect 방식 -
+    # render - / redirect -  
 
     
 def helloFunc(request):
